@@ -1,0 +1,32 @@
+{
+  "name": "in-view",
+  "version": "0.1.0",
+  "description": "A Web Component that tells if its children are in view",
+  "main": "in-view.js",
+  "scripts": {
+    "start": "esbuild src/in-view.js --bundle --outdir=example --servedir=example",
+    "build": "esbuild src/in-view.js --bundle --minify --sourcemap --outfile=dist/in-view.js",
+    "format": "prettier --write **/*.{html,js}",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doughamlin/in-view.git"
+  },
+  "keywords": [
+    "visible",
+    "component",
+    "viewport",
+    "IntersectionObserver"
+  ],
+  "author": "Doug Hamlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doughamlin/in-view/issues"
+  },
+  "homepage": "https://github.com/doughamlin/in-view#readme",
+  "devDependencies": {
+    "esbuild": "^0.14.1",
+    "prettier": "^2.5.0"
+  }
+}
